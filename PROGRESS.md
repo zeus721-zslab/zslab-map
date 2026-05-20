@@ -43,5 +43,9 @@
 
 ## STEP 10: .gitignore 보완 및 커밋·푸시 (2026-05-20)
 - [x] STEP 10-1: .gitignore에 .claude/ 추가
-- [ ] STEP 10-2: git add -A && commit
-- [ ] STEP 10-3: git push origin main
+- [x] STEP 10-2: git add -A && commit
+- [x] STEP 10-3: git push origin main
+
+## STEP 11: Dockerfile lockfile 의존성 제거 및 커밋·푸시 (2026-05-21)
+- [x] STEP 11-1: docker/frontend/Dockerfile 수정
+- [ ] STEP 11-2: git commit && push
