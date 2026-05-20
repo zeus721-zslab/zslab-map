@@ -6,6 +6,10 @@
 3. 에러 시 PROGRESS.md에 `❌ 에러: <내용>` 기록 후 중단·보고
 4. 묻지 말고 스스로 판단 진행
 
+## git 정보
+username = zeus721-zslab
+useremail = zeus7211@gmail.com
+
 ## PROGRESS.md 스텝 형식
 ## STEP N: 작업명 (날짜)
 - [ ] STEP N-1: 세부 작업

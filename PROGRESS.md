@@ -21,6 +21,27 @@
 - [x] STEP 5-1: README.md 파일 생성
 
 ## STEP 6: 초기 커밋 (2026-05-20)
-- [ ] STEP 6-1: git add -A
-- [ ] STEP 6-2: git commit
-- [ ] STEP 6-3: git push -u origin main
+- [x] STEP 6-1: git add -A
+- [x] STEP 6-2: git commit
+- [x] STEP 6-3: git push -u origin main - 사용자가 직접 처리 완료
+
+## STEP 7: Docker + CI/CD 초기 구성 (2026-05-20)
+- [x] STEP 7-1: docker-compose.map.yml 생성
+- [x] STEP 7-2: docker/frontend/Dockerfile 생성
+- [x] STEP 7-3: docker/backend/Dockerfile 생성
+- [x] STEP 7-4: docker/backend/Caddyfile 생성
+- [x] STEP 7-5: .github/workflows/deploy.yml 생성
+- [x] STEP 7-6: .env.example 업데이트
+
+## STEP 8: docker-compose.map.yml 구조 수정 (2026-05-20)
+- [x] STEP 8-1: docker-compose.map.yml 재작성
+
+## STEP 9: Laravel + Next.js 앱 초기 코드 생성 (2026-05-20)
+- [x] STEP 9-1: backend/ Laravel 핵심 파일 생성
+- [x] STEP 9-2: frontend/ Next.js 초기 파일 생성
+- [x] STEP 9-3: docker/backend/Caddyfile 수정 (리버스 프록시)
+
+## STEP 10: .gitignore 보완 및 커밋·푸시 (2026-05-20)
+- [x] STEP 10-1: .gitignore에 .claude/ 추가
+- [ ] STEP 10-2: git add -A && commit
+- [ ] STEP 10-3: git push origin main

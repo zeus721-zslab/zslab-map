@@ -1,0 +1,52 @@
+services:
+  map_frontend:
+    image: ghcr.io/zeus721-zslab/zslab-map-frontend:latest
+    restart: unless-stopped
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+      - NEXT_PUBLIC_NAVER_MAP_CLIENT_ID=${NEXT_PUBLIC_NAVER_MAP_CLIENT_ID}
+    networks:
+      - gateway_net
+      - map_net
+
+  map_caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    volumes:
+      - ./docker/backend/Caddyfile:/etc/caddy/Caddyfile
+    networks:
+      - gateway_net
+      - map_net
+    depends_on:
+      - map_php
+
+  map_php:
+    image: ghcr.io/zeus721-zslab/zslab-map-php:latest
+    restart: unless-stopped
+    environment:
+      - APP_KEY=${APP_KEY}
+      - APP_URL=${APP_URL}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - NAVER_MAP_CLIENT_ID=${NAVER_MAP_CLIENT_ID}
+    volumes:
+      - map_storage:/var/www/html/storage
+    networks:
+      - zslab_zslab_net
+      - map_net
+
+volumes:
+  map_storage:
+
+networks:
+  zslab_zslab_net:
+    external: true
+  gateway_net:
+    external: true
+  map_net:
+    driver: bridge

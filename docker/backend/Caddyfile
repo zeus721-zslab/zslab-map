@@ -1,0 +1,3 @@
+:80 {
+    reverse_proxy map_php:80
+}
