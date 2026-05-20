@@ -8,16 +8,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-COPY composer.json ./
+COPY backend/composer.json ./
 RUN composer install --no-dev --optimize-autoloader --no-scripts --no-interaction
 
-COPY . .
+COPY backend/ .
 RUN composer run-script post-autoload-dump 2>/dev/null || true
 
 ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh /usr/local/bin/wait-for-it.sh
 RUN chmod +x /usr/local/bin/wait-for-it.sh
-
-COPY docker/backend/Caddyfile /etc/caddy/Caddyfile
 
 EXPOSE 80
 

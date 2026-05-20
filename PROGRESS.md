@@ -61,4 +61,8 @@
 
 ## STEP 14: .gitignore storage 예외 추가 및 커밋·푸시 (2026-05-21)
 - [x] STEP 14-1: .gitignore 예외 추가
-- [ ] STEP 14-2: git commit && push
+- [x] STEP 14-2: git commit && push
+
+## STEP 15: Dockerfile COPY 경로 수정 및 커밋·푸시 (2026-05-21)
+- [x] STEP 15-1: docker/backend/Dockerfile 수정
+- [ ] STEP 15-2: git commit && push
