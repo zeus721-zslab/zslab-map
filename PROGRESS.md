@@ -52,4 +52,9 @@
 
 ## STEP 12: frontend/public 디렉토리 생성 및 커밋·푸시 (2026-05-21)
 - [x] STEP 12-1: frontend/public/.gitkeep 생성
-- [ ] STEP 12-2: git commit && push
+- [x] STEP 12-2: git commit && push
+
+## STEP 13: composer.lock 제거 + storage 디렉토리 구조 생성 (2026-05-21)
+- [x] STEP 13-1: docker/backend/Dockerfile 수정
+- [x] STEP 13-2: backend/storage + bootstrap/cache 디렉토리 생성
+- [ ] STEP 13-3: git commit && push
