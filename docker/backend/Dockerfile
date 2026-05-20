@@ -4,6 +4,9 @@ WORKDIR /var/www/html
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     netcat-openbsd \
+    git \
+    unzip \
+    zip \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer

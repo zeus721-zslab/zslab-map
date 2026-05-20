@@ -65,4 +65,8 @@
 
 ## STEP 15: Dockerfile COPY 경로 수정 및 커밋·푸시 (2026-05-21)
 - [x] STEP 15-1: docker/backend/Dockerfile 수정
-- [ ] STEP 15-2: git commit && push
+- [x] STEP 15-2: git commit && push
+
+## STEP 16: backend Dockerfile apt 패키지 추가 및 커밋·푸시 (2026-05-21)
+- [x] STEP 16-1: docker/backend/Dockerfile 수정
+- [ ] STEP 16-2: git commit && push
