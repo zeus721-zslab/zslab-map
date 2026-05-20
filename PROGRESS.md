@@ -57,4 +57,8 @@
 ## STEP 13: composer.lock 제거 + storage 디렉토리 구조 생성 (2026-05-21)
 - [x] STEP 13-1: docker/backend/Dockerfile 수정
 - [x] STEP 13-2: backend/storage + bootstrap/cache 디렉토리 생성
-- [ ] STEP 13-3: git commit && push
+- [x] STEP 13-3: git commit && push
+
+## STEP 14: .gitignore storage 예외 추가 및 커밋·푸시 (2026-05-21)
+- [x] STEP 14-1: .gitignore 예외 추가
+- [ ] STEP 14-2: git commit && push
