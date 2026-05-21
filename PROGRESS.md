@@ -70,3 +70,19 @@
 ## STEP 16: backend Dockerfile apt 패키지 추가 및 커밋·푸시 (2026-05-21)
 - [x] STEP 16-1: docker/backend/Dockerfile 수정
 - [ ] STEP 16-2: git commit && push
+
+## STEP 17: zslab-map SSL 인증서 발급 + nginx 설정 (2026-05-21)
+- [ ] STEP 17-1: certbot SSL 인증서 발급
+- [ ] STEP 17-2: 인증서 gateway certs 디렉토리로 복사
+- [ ] STEP 17-3: nginx.conf에 zslab-map 서버 블록 추가
+- [ ] STEP 17-4: nginx 설정 검증 및 reload
+
+## STEP 18: zslab-map nginx 설정 추가 (2026-05-21)
+- [x] STEP 18-1: 인증서 복사 (/home/gateway/certs/zslab-map.duckdns.org)
+- [x] STEP 18-2: nginx.conf에 zslab-map 서버 블록 추가 (sed -i)
+- [x] STEP 18-3: nginx 검증 및 reload
+
+## STEP 19: Laravel 필수 라우트 및 기본 파일 생성 (2026-05-21)
+- [x] STEP 19-1: backend/routes/ 파일 생성 (api.php, web.php, console.php)
+- [x] STEP 19-2: backend/config/ 파일 생성 (app, database, cache, session, logging)
+- [ ] STEP 19-3: git commit && push
