@@ -3,22 +3,18 @@ FROM dunglas/frankenphp:latest
 WORKDIR /var/www/html
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    netcat-openbsd \
-    git \
-    unzip \
-    zip \
-    && rm -rf /var/lib/apt/lists/*
+    netcat-openbsd unzip zip \
+    && rm -rf /var/lib/apt/lists/* \
+    && install-php-extensions pdo_mysql redis bcmath opcache
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-COPY backend/composer.json ./
-RUN composer install --no-dev --optimize-autoloader --no-scripts --no-interaction
-
-COPY backend/ .
-RUN composer run-script post-autoload-dump 2>/dev/null || true
-
 ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh /usr/local/bin/wait-for-it.sh
 RUN chmod +x /usr/local/bin/wait-for-it.sh
+
+COPY backend/ .
+
+RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 EXPOSE 80
 

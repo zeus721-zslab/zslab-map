@@ -86,3 +86,16 @@
 - [x] STEP 19-1: backend/routes/ 파일 생성 (api.php, web.php, console.php)
 - [x] STEP 19-2: backend/config/ 파일 생성 (app, database, cache, session, logging)
 - [ ] STEP 19-3: git commit && push
+
+## STEP 21: Docker로 Laravel 12 풀 프로젝트 생성 (2026-05-21)
+- [x] STEP 21-1: backend/ 디렉토리 삭제
+- [x] STEP 21-2: Docker로 Laravel 12 create-project
+- [ ] STEP 21-3: backend/.env 삭제, .env.example 복원
+- [ ] STEP 21-4: docker/backend/Dockerfile 재작성
+- [ ] STEP 21-5: git commit && push
+
+## STEP 22: Laravel 풀 프로젝트 기반 Dockerfile 정리 및 커밋·푸시 (2026-05-21)
+- [x] STEP 22-1: backend/ 상태 확인 (완료)
+- [x] STEP 22-2: .gitignore vendor/ 확인 (완료)
+- [x] STEP 22-3: docker/backend/Dockerfile 재작성
+- [ ] STEP 22-4: git commit && push
