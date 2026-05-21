@@ -69,7 +69,7 @@
 
 ## STEP 16: backend Dockerfile apt 패키지 추가 및 커밋·푸시 (2026-05-21)
 - [x] STEP 16-1: docker/backend/Dockerfile 수정
-- [ ] STEP 16-2: git commit && push
+- [x] STEP 16-2: git commit && push
 
 ## STEP 17: zslab-map SSL 인증서 발급 + nginx 설정 (2026-05-21)
 - [ ] STEP 17-1: certbot SSL 인증서 발급
