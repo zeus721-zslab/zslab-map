@@ -98,4 +98,9 @@
 - [x] STEP 22-1: backend/ 상태 확인 (완료)
 - [x] STEP 22-2: .gitignore vendor/ 확인 (완료)
 - [x] STEP 22-3: docker/backend/Dockerfile 재작성
-- [ ] STEP 22-4: git commit && push
+- [x] STEP 22-4: git commit && push
+
+## STEP 23: FrankenPHP Caddyfile 추가 및 커밋·푸시 (2026-05-21)
+- [x] STEP 23-1: docker/backend/php.Caddyfile 생성
+- [x] STEP 23-2: docker/backend/Dockerfile 수정
+- [ ] STEP 23-3: git commit && push

@@ -13,6 +13,7 @@ ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.s
 RUN chmod +x /usr/local/bin/wait-for-it.sh
 
 COPY backend/ .
+COPY docker/backend/php.Caddyfile /etc/caddy/Caddyfile
 
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
